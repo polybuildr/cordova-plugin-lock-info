@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="cordova-plugin-lock-info" version="0.0.1">
+    <name>Locked Info</name>
+    <description>Cordova plugin to check locked/unlocked state</description>
+    <license>UNLICENSED</license>
+    <keywords>cordova,lock,unlock</keywords>
+    <repo>https://github.com/polybuildr/cordova-plugin-locked-info</repo>
+    <js-module src="www/lock-info.js" name="lockinfo">
+        <clobbers target="getLockInfo" />
+    </js-module>
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="LockInfoPlugin">
+                <param name="android-package" value="com.vghaisas.cordova.plugin.lockinfo" />
+            </feature>
+        </config-file>
+        <source-file src="src/android/LockInfoPlugin.java" target-dir="src/com/vghaisas/cordova/plugin/lockinfo" />
+    </platform>
+</plugin>
