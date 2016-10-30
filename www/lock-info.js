@@ -10,4 +10,4 @@ function getLockInfo (success, error) {
     );
 }
 
-module.exports = getLockInfo;
+module.exports.getLockInfo = getLockInfo;

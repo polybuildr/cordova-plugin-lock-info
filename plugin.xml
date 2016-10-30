@@ -7,7 +7,7 @@
     <keywords>cordova,lock,unlock</keywords>
     <repo>https://github.com/polybuildr/cordova-plugin-locked-info</repo>
     <js-module src="www/lock-info.js" name="lockinfo">
-        <clobbers target="getLockInfo" />
+        <clobbers target="cordova.plugins.lockInfo" />
     </js-module>
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
