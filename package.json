@@ -1,0 +1,21 @@
+{
+  "name": "cordova-plugin-lock-info",
+  "version": "0.0.1",
+  "description": "Cordova plugin to detect if screen is locked/unlocked on Android.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://polybuildr@github.com/polybuildr/cordova-plugin-lock-info.git"
+  },
+  "keywords": [
+    "cordova",
+    "plugin",
+    "locked",
+    "unlocked"
+  ],
+  "author": "Vivek Ghaisas <v.a.ghaisas@gmail.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/polybuildr/cordova-plugin-lock-info/issues"
+  },
+  "homepage": "https://github.com/polybuildr/cordova-plugin-lock-info#readme"
+}
