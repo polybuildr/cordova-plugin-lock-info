@@ -20,7 +20,7 @@ class LockInfoPlugin extends CordovaPlugin {
         return false;
     }
 
-    public boolean isLocked(CallbackContext context) {
+    public void isLocked(CallbackContext context) {
         KeyguardManager kgMgr = (KeyguardManager) this.cordova.getActivity()
             .getApplicationContext()
             .getSystemService(Context.KEYGUARD_SERVICE);
