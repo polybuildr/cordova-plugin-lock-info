@@ -1,8 +1,13 @@
-window.getLockInfo = function (success, error) {
-    cordova.exec(
+var exec = require("cordova/exec");
+
+function getLockInfo (success, error) {
+    exec(
         success,
         error,
         'LockInfoPlugin',
-        'isLocked'
+        'isLocked',
+        []
     );
 }
+
+module.exports = getLockInfo;
