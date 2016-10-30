@@ -24,6 +24,6 @@ class LockInfoPlugin extends CordovaPlugin {
         KeyguardManager kgMgr = (KeyguardManager) this.cordova.getActivity()
             .getApplicationContext()
             .getSystemService(Context.KEYGUARD_SERVICE);
-        context.success(kgMgr.inKeyguardRestrictedInputMode());
+        context.success(kgMgr.inKeyguardRestrictedInputMode() ? 1 : 0);
     }
 }
