@@ -1,13 +1,13 @@
 var exec = require("cordova/exec");
 
-function getLockInfo (success, error) {
+function isLocked (successCallback, errorCallback) {
     exec(
-        success,
-        error,
+        successCallback,
+        errorCallback,
         'LockInfoPlugin',
         'isLocked',
         []
     );
 }
 
-module.exports.getLockInfo = getLockInfo;
+module.exports.isLocked = isLocked;
