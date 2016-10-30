@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-lock-info",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Cordova plugin to detect if screen is locked/unlocked on Android.",
   "repository": {
     "type": "git",
