@@ -8,6 +8,7 @@ import android.app.KeyguardManager;
 import android.content.Context;
 import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.CallbackContext;
+import org.apache.cordova.PluginResult;
 
 class LockInfoPlugin extends CordovaPlugin {
 
@@ -24,6 +25,7 @@ class LockInfoPlugin extends CordovaPlugin {
         KeyguardManager kgMgr = (KeyguardManager) this.cordova.getActivity()
             .getApplicationContext()
             .getSystemService(Context.KEYGUARD_SERVICE);
-        context.success(kgMgr.inKeyguardRestrictedInputMode() ? 1 : 0);
+        boolean result = kgMgr.inKeyguardRestrictedInputMode();
+        context.sendPluginResult(new PluginResult(PluginResult.Status.OK, result));
     }
 }
